@@ -24,7 +24,7 @@ import {getBlogPosts, getProjects, getSocials} from "@/util/data";
 export default async function Home() {
     const nav = [
         {name: "Socials", href: "#socials", icon: LinkIcon},
-        {name: "Technologies", href: "#stack", icon: WrenchScrewdriverIcon},
+        // {name: "Technologies", href: "#stack", icon: WrenchScrewdriverIcon},
         {name: "Portfolio", href: "#projects", icon: BriefcaseIcon},
         {name: "Blog", href: "#blog", icon: PencilIcon},
     ]
@@ -36,7 +36,7 @@ export default async function Home() {
 
     return (
         <>
-            <aside className="flex items-center justify-between mb-8 sm:mb-16 sm:pt-8 sticky top-8 sm:top-0">
+            <aside className="flex items-center justify-between mb-4 sm:mb-16 sm:pt-8 top-2 sm:top-0">
                 <label>
                     <input type="checkbox" className="hidden peer"/>
                     <Bars3Icon className="w-6 h-6 sm:hidden cursor-pointer"/>
@@ -72,19 +72,18 @@ export default async function Home() {
                     />
                     <div className="flex flex-col gap-2">
                         <h1 className="text-2xl sm:text-4xl font-bold text-neutral-900 dark:text-neutral-100">
-                            Damir Modyarov
+                            Alex Sukhotckii
                         </h1>
                         <p className="text-neutral-700 dark:text-neutral-300 text-sm sm:text-lg">
-                            Web Developer, UI Designer
+                            Programmer, Web Developer, and a Malware Coder.
                         </p>
                     </div>
                 </div>
                 <p className="text-neutral-700 dark:text-neutral-300 text-sm sm:text-lg mt-4 sm:mt-8">
-                    Hi! I’m Damir Modyarov <span className="text-neutral-500"> (@otomir23)</span>.
+                    Hi! Im Alex Sukhotckii <span className="text-neutral-500"> (@fifty4degree5)</span>.
                     I live in <MapPinIcon className="w-4 h-4 inline text-blue-600"/>{" "}
                     <span className="underline text-blue-600 cursor-help" title="Great city!">Moscow, Russia</span> and
-                    I am a developer, designer and a very lazy person. I primary specialize in web design and
-                    development, but I also sometimes create Minecraft mods or Discord bots.
+                    I am a programmer, I love to program. I work on a Mac, but also know Linux very well. In my free time, that I almost don’t have, I try writing malware,  <span className="text-neutral-100">only for edutational purposes</span> tho, because hacking is illegal.
                 </p>
             </section>
             <section id="socials" className="mt-8 sm:mt-16">
